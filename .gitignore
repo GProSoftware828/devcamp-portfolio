@@ -23,5 +23,5 @@
 .byebug_history
 
 #I don't want to show my secrets
-/congif/secrets.yml
+/config/secrets.yml
 secrets.yml
