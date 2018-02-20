@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :blogs
 
+  get 'blog/:id', to: 'blog#show', as: 'blog_show'
+
   root to: 'pages#home'
 
 end
