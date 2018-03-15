@@ -5,12 +5,14 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all
+    @page_title = "My Portfolio Blog"
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
     @blogs = Blog.find(params[:id])
+    @page_title = @blog.title
   end
 
   # GET /blogs/new
@@ -26,15 +28,13 @@ class BlogsController < ApplicationController
   # POST /blogs
   # POST /blogs.json
   def create
-    @blog = Blog.new(params.require(:blog).permit(:title, :subtitle, :body))
+    @blog = Blog.new(blog_params)
 
     respond_to do |format|
-      if @blogs.save
-        format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
-        format.json { render :show, status: :created, location: @blog }
+      if @blog.save
+        format.html { redirect_to @blog, notice: 'Your post is now live.' }
       else
         format.html { render :new }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
     end
   end
