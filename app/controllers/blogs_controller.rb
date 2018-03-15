@@ -13,6 +13,7 @@ class BlogsController < ApplicationController
   def show
     @blogs = Blog.find(params[:id])
     @page_title = @blog.title
+    @seo_keywords = @blog.body
   end
 
   # GET /blogs/new
