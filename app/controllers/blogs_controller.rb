@@ -26,7 +26,7 @@ class BlogsController < ApplicationController
   # POST /blogs
   # POST /blogs.json
   def create
-    @blog = Blog.new(params.require(:blog).permit(:title, :subtitle, :body))
+    @blog = Blog.new(params.require(:blog).permit(:title, :body))
 
     respond_to do |format|
       if @blogs.save
