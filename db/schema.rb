@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20180308034313) do
     t.string "slug"
     t.integer "status", default: 0
     t.integer "topic_id"
-    t.index ["slug"], name: "index_blogs_on_slug", unique: true
-    t.index ["topic_id"], name: "index_blogs_on_topic_id"
+    t.index ["slug"], name: "index_blogs_on_slug", unique: true, using: :btree
+    t.index ["topic_id"], name: "index_blogs_on_topic_id", using: :btree
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
