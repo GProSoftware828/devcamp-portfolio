@@ -12,10 +12,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-<<<<<<< HEAD
     @blogs = Blog.find(params[:id])
-=======
->>>>>>> view
     @page_title = @blog.title
     @seo_keywords = @blog.body
   end
