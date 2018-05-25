@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
@@ -54,7 +54,12 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'friendly_id', '~> 5.1.0'
+<<<<<<< HEAD
 
 gem 'bootstrap', '~> 4.1.1'
 gem 'devise', '~> 4.4', '>= 4.4.1'
 gem 'petergate', '~> 1.8', '>= 1.8.1'
+=======
+gem 'devise', '~> 4.4', '>= 4.4.1'
+gem 'bootstrap', '~> 4.1.1'
+>>>>>>> b1e1bbb8aa5d8b703626489d4d2e0e071f000aaf
