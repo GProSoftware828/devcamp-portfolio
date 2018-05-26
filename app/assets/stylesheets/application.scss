@@ -42,8 +42,9 @@ body {
 
 .cover-container {
   max-width: 42em;
+  align: center;
+  margin: auto;
 }
-
 
 /*
  * Header
@@ -93,6 +94,7 @@ body {
  */
 .cover {
   padding: 0 1.5rem;
+  align: center;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
