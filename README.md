@@ -16,7 +16,7 @@ This application three controllers, 8 models, a dozen migration files, and the f
 
 * others
 
-### ersions
+### Versions
 
 #### Ruby- 2.4.0
 
