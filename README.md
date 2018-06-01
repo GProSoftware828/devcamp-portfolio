@@ -2,7 +2,7 @@
 
 This application allows users to sign in and add both blog posts and also a portfolio image with notes. The topics are displaying the different applications and software languages the user wishes to show to other site users as a forum posting.
 
-###Introduction
+### Introduction
 
 This application three controllers, 8 models, a dozen migration files, and the following gems:
 
@@ -16,13 +16,13 @@ This application three controllers, 8 models, a dozen migration files, and the f
 
 * others
 
-###Versions
+### ersions
 
-####Ruby- 2.4.0
+#### Ruby- 2.4.0
 
-####Rails- 5.1.4
+#### Rails- 5.1.4
 
-###Syntax
+### Syntax
 
 Dot notation is RECOMMENDED over bracket notation for method calls:
 
@@ -44,11 +44,11 @@ The model and controller classes inherit from the application class:
 
 The views utilize embedded ruby for the models:
 
-**For #Example-**
+**For Example-**
 
 >     <%= yield %>
 
-###Configuration-
+### Configuration-
 
 This application is hosted in development locally and in production in Heroku with a Postgres DB.
 
