@@ -27,15 +27,15 @@ This application uses three controllers, 8 models, a dozen migration files, and 
 Dot notation is RECOMMENDED over bracket notation for method calls:
 
 **For Example-**
-
->def first_name
+```ruby
+def first_name
 	self.name.split.first
 end
 
->def last_name
+def last_name
 	self.name.split.last
 end
-
+```
 The model and controller classes inherit from the application class:
 
 **For Example-**
