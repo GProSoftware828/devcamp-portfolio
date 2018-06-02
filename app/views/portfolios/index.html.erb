@@ -2,8 +2,4 @@
 
 <%= link_to "Create New Item", new_portfolio_url if logged_in?(:user) %>
 
-<p>
-	<%= new_portfolio_path %>
-</p>
-
-<% render partial: 'portfolio_item', collection: @portfolio_items %>
+<%= render partial: 'portfolio_item', collection: @portfolio_items %>

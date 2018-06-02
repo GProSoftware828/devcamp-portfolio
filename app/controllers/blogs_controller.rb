@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout "blog"
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  access all: [:show, :index], user: [:destroy, :new, :create, :update, :edit], site_admin: :all
 
   # GET /blogs
   # GET /blogs.json
@@ -24,6 +24,8 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1/edit
   def edit
+    @page_title = @blog.title
+    @seo_keywords = @blog.body
   end
 
   # POST /blogs

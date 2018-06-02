@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :portfolios, except: [:show]
+  resources :portfolios
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' } 
   resources :portfolios, except: [:show] do 
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   mount ActionCable.server => '/cable'
 
-  resources :blogs do
+  resources :portfolios do
     member do
       get :toggle_status
     end

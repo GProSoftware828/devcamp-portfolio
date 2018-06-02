@@ -2,6 +2,9 @@
 
 <h1>Blogs</h1>
 
+<%= link_to 'New Blog', new_blog_path if logged_in?(:user) %>
+
+<body>
 <table>
   <thead>
     <tr>
@@ -16,7 +19,4 @@
     <%= render @blogs %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+</body>
