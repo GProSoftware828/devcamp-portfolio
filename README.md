@@ -39,15 +39,15 @@ end
 The model and controller classes inherit from the application class:
 
 **For Example-**
-
-> class User < ApplicationRecord
-
+```ruby
+class User < ApplicationRecord
+```
 The views utilize embedded ruby for the models:
 
 **For Example-**
-
->     <%= yield %>
-
+```ruby
+     <%= yield %>
+```
 ## Configuration
 
 This application is hosted in development locally and in production in Heroku with a Postgres DB.
