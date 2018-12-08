@@ -1,5 +1,7 @@
 # Ruby on Rails Application for User Profiles
 
+Made from online class Dissecting Ruby on Rails 5 - Become a Professional... instructor Jordan Hudgens, CTO at devCamp.
+
 This application allows users to sign in and add both blog posts and also a portfolio image with notes. The topics are displaying the different applications and software languages the user wishes to show to other site users as a forum posting.
 
 ## Introduction
