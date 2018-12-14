@@ -1,4 +1,4 @@
-module socialTool
+module SocialTool
   def self.twitter_search
     client = Twitter::REST::Client.new do |config|
       config.consumer_key        = Env.fetch("TWITTER_CONSUMER_KEY")
