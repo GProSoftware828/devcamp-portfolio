@@ -13,14 +13,14 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
     <div id="background"> </div>
     <%= render 'shared/nav', location: 'top' %>
+
+    <%= alerts %>
 
     <%= yield %>
 
     <%= source_helper("application") %>
-
   </body>
 </html>
