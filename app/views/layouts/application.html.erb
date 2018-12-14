@@ -29,7 +29,12 @@
         )%>
  
           <%= render "shared/application_nav"%>
+
           <%= yield %>
+
+          <%= alerts %>
+
+          <%= source_helper("application") %>
 
         </div>
       </div>
