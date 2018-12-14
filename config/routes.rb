@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   resources :portfolios
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' } 
@@ -18,14 +19,13 @@ Rails.application.routes.draw do
   	end
   end
 
-  mount ActionCable.server => '/cable'
-
-  resources :portfolios do
+    resources :portfolios do
     member do
       get :toggle_status
     end
   end
 
-  root to: 'pages#home'
+  mount ActionCable.server => '/cable'
 
+  root to: 'pages#home'
 end

@@ -153,7 +153,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    width: 65%; /* Must be percentage or pixels for horizontal alignment */
   }
 }
 
@@ -206,4 +206,19 @@ body {
   transform: translateX(-50%) translateY(-50%);
   background: image-url('Urban.mp4') no-repeat;
   background-size: cover;
+}
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: green;
+  margin: 20px;
+}
+
+.tech-news > .card {
+  color: green;
+  padding: 30px;
 }
