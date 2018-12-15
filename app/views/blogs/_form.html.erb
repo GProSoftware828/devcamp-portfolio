@@ -11,6 +11,16 @@
   </div>
 
   <div class="form-group">
+  <%= f.radio_button :status, 'draft' %>
+  <%= f.label :status, 'Draft Status' %>
+  </div>
+
+    <div class="form-group">
+  <%= f.radio_button :status, 'published' %>
+  <%= f.label :status, 'Published Status' %>
+  </div>
+
+  <div class="form-group">
     <%= f.label :topic_id %>
     <%= f.collection_select(:topic_id, Topic.all, :id, :title,
                             {
