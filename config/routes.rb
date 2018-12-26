@@ -15,16 +15,12 @@ Rails.application.routes.draw do
   get 'tech-news', to: 'pages#tech_news'
 
   resources :blogs do 
-  	member do
-  		get :toggle_status
+  		get :toggle_status, on: :member
   	end
-  end
 
   resources :portfolios do
-    member do
-      get :toggle_status
+      get :toggle_status, on: :member
     end
-  end
 
   mount ActionCable.server => '/cable'
 
