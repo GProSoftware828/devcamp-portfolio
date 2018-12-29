@@ -1,4 +1,5 @@
 class BlogsChannel < ApplicationCable::BlogsChannel
+  #how to assign comments to a particular blog model instance:
   def subscribed
     stream_from "blogs_#{params['blog_id']}_channel"
   end

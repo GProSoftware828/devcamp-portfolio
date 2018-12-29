@@ -9,6 +9,7 @@ module ApplicationCable
         guest.first_name = "Guest"
         guest.last_name = "User"
         guest.email = "guest@user.com"
+        guest
       end
 
       def Connect
@@ -19,6 +20,7 @@ module ApplicationCable
 
       protected
 
+      #This requests data from devise gem for current user:
       def find_verified_user
         if verified_user = env['warden'].user
           verified_user
