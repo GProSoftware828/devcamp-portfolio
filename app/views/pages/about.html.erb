@@ -1,19 +1,16 @@
 <div class="app-card-container">
   <div class="card">
-    <%= render "shared/application_nav"%>
     <div class="skill">
-      <h2>About Me</h2>
+      <%= image_tag "computer_code.jpg", width: '78%', alt: "Profile Image", class: "about-img" %>
+    </div>
+    <div class="skill">
+      <h2>Percentage of Abilities - Each Skill</h2>
     </div>
 
     <hr>
 
     <div class="row">
-      <div class="col-md-4">
-        <%= image_tag "computer_code.jpg", width: '78%', alt: "Profile Image", class: "about-img" %>
-      </div>
-
       <div class="skills">
-        <h2>Percentage of Portfolio- Each Skill</h2>
         <% @skills.each do |skill| %>
           <div class="skill">
             <h4><%= skill.title %></h4>
@@ -27,13 +24,12 @@
             </div>
           </div>
         <% end %>
-              <div class="col-md-8">
         <p>
         "I am a diversified computer programmer and knowledgable software developer. Over the course of three years I have covered the spectrum of deeply studying and applying the languages of website applications as well as computing languages such as C++."
         </p><p>
         "My projects have focused on developing software for the social integration of novel writers and their books in the form of a Ruby on Rails application designed to be a monetized social media platform for writers, encompassing special features such as my invention of a C++ program to give their books maturity ratings upon pdf upload." 
         </p><p>
-        "From this personal background, I have also amassed broad JavaScript and other full stack skills from the demands of my first computer programming job. From this overall understanding I can be your reliable and hardworking computer programmer."
+        "This background has given me broad JavaScript and other full stack skills, from the demands of my first programming job. This overall understanding makes me your reliable and hardworking computer programmer."
         </p>
 
         <p>
@@ -48,23 +44,22 @@
           Resume (Please click and Scroll Down)
           </button>
         </p>
-      </div>
 
         <p>
           <div class="collapse" id="resume">
-            <div class="card card-block">
+            <div class="card-block">
               <h2>Hummingbird</h2><br/>
               <p>2012-2018</p><br/>
               <p>C++ maturity rating scan for books, experiments in Ruby and JavaScript</p>
-              <p>Large software development phase 2012-2016</p>
+              <p>Large software development phase 2012-2016 = 2.5 second performance (each book scan)</p>
             </div>
-            <div class="card card-block">
+            <div class="card-block">
               <h2>Narrati√</h2><br/>
               <p>2016-2018</p><br/>
-              <p>Rails app for novelists- a monetized social media platform</p>
+              <p>Rails app for novelists- a monetized social media platform,</p>
               <p>professional project in development for sale to investors</p>
             </div>            
-            <div class="card card-block">
+            <div class="card-block">
               <h2>Internet Builder Consultants</h2><br/>
               <p>2016</p><br/>
               <p>Worked under senior developer for website application</p>
