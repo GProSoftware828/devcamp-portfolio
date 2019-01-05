@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    CourseTool::Renderer.copyright 'Student', 'Fair Use' copy& 2018
+    'Student, Fair Use copy& 2018'
   end
 
   def nav_items

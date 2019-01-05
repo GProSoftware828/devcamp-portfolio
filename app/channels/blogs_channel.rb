@@ -1,4 +1,5 @@
 class BlogsChannel < ApplicationCable::BlogsChannel
+  #  #the show div passes the comment model (ass. to blogs and users) into Action Cable's channel component and uses its stream method to make the channel component dynamic:
   def subscribed
     stream_from "blogs_#{params['blog_id']}_channel"
   end

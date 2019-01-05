@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :topics, only: [:index, :show]
 
-  resources :comments
   resources :portfolios
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' } 
@@ -13,19 +12,14 @@ Rails.application.routes.draw do
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'tech-news', to: 'pages#tech_news'
-  get 'tech-news', to: 'pages#tech_news'
 
   resources :blogs do 
-  	member do
-  		get :toggle_status
+  		get :toggle_status, on: :member
   	end
-  end
 
-    resources :portfolios do
-    member do
-      get :toggle_status
+  resources :portfolios do
+      get :toggle_status, on: :member
     end
-  end
 
   mount ActionCable.server => '/cable'
 
