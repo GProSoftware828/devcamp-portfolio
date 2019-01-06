@@ -3,21 +3,23 @@
     <div class="col-md-7"
       <%= image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%' %>
     </div>
-#  Coding error L4, all img called thumb_image in console. Caught in lecture 178; found by me lect. 169+/-
-    <div class="col-md-5">
+
+    <div>
       <h1><%= @portfolio_item.title %></h1>
 
       <em><%= @portfolio_item.subtitle %></em>
 
       <p><%= @portfolio_item.body %></p>
 
-      <%= link_to 'Back', portfolios_path %>
+      <%= image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '90%' %>
 
       <h2>Technologies Used:</h2>
 
-      <%= @portfolio_item.technologies.each do |t| %>
+      <% @portfolio_item.technologies.each do |t| %>
       <p><%= t.name %></p>
       <% end %>
+
+      <%= link_to 'Back', portfolios_path %>
 
       <% if logged_in?(:site_admin) %>
         <div class="col-md-12">

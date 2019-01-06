@@ -1,18 +1,73 @@
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "EveryoneOwesMoneyToJapan2018.jpg", width: '78%', alt: "Profile Image" %>
-  </div>
-  <div class="col-md-8">
-    <h2>About Me</h2>
-    <p>
-    The standard Lorem Ipsum passage, used since the 1500s
+<div class="app-card-container">
+  <div class="card">
+    <div class="skill">
+      <%= image_tag "computer_code.jpg", width: '78%', alt: "Profile Image", class: "about-img" %>
+    </div>
+    <div class="skill">
+      <h2>Percentage of Abilities - Each Skill</h2>
+    </div>
 
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    </p><p>
-    Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+    <hr>
 
-    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-    </p>
+    <div class="row">
+      <div class="skills">
+        <% @skills.each do |skill| %>
+          <div class="skill">
+            <h4><%= skill.title %></h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning"
+                role="progressbar"
+                aria-valuenow="<%= skill.percent_utilized %>"
+                aria-valuemax="100"
+                style="width: <%= skill.percent_utilized %>%"
+              ></div>
+            </div>
+          </div>
+        <% end %>
+        <p>
+        "I am a diversified computer programmer and knowledgable software developer. Over the course of three years I have covered the spectrum of deeply studying and applying the languages of website applications as well as computing languages such as C++."
+        </p><p>
+        "My projects have focused on developing software for the social integration of novel writers and their books in the form of a Ruby on Rails application designed to be a monetized social media platform for writers, encompassing special features such as my invention of a C++ program to give their books maturity ratings upon pdf upload." 
+        </p><p>
+        "This background has given me broad JavaScript and other full stack skills, from the demands of my first programming job. This overall understanding makes me your reliable and hardworking computer programmer."
+        </p>
+
+        <p>
+          <button
+            class="btn btn-primary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#resume"
+              aria-expanded="false"
+              aria-controller="resume"
+          >
+          Resume (Please click and Scroll Down)
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="resume">
+            <div class="card-block">
+              <h2>Hummingbird</h2><br/>
+              <p>2012-2018</p><br/>
+              <p>C++ maturity rating scan for books, experiments in Ruby and JavaScript</p>
+              <p>Large software development phase 2012-2016 = 2.5 second performance (each book scan)</p>
+            </div>
+            <div class="card-block">
+              <h2>Narrati√</h2><br/>
+              <p>2016-2018</p><br/>
+              <p>Rails app for novelists- a monetized social media platform,</p>
+              <p>professional project in development for sale to investors</p>
+            </div>            
+            <div class="card-block">
+              <h2>Internet Builder Consultants</h2><br/>
+              <p>2016</p><br/>
+              <p>Worked under senior developer for website application</p>
+              <p>Platform was ASP with MySQL, PHP, VBScript, JavaScript, others</p>
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
-

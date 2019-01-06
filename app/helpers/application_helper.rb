@@ -9,15 +9,15 @@ module ApplicationHelper
     end
   end
 
-  def source_helper(layout_name)
+  def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "Thanks for visiting me from #{session[:source]}, feel free to #{link_to 'contact me', contact_path} if you'd like to work together."
+      content_tag(:div, greeting.html_safe, class: styles)
     end
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
+    'Student, Fair Use copy& 2018'
   end
 
   def nav_items
@@ -41,7 +41,7 @@ module ApplicationHelper
       {
         url: portfolios_path,
         title: 'Portfolio'
-      },
+      }
     ]
   end
 
