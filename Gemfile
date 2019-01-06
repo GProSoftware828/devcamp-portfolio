@@ -17,6 +17,10 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+group :production do
+  gem 'redis', '~> 3.3', '>= 3.3.3'
+end
+
 group :test do
   
 end
@@ -51,4 +55,3 @@ gem 'dotenv-rails', '~> 2.1', '>= 2.1.2'
 gem 'cocoon', '~> 1.2', '>= 1.2.9'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.1'
-gem 'redis', '~> 3.3', '>= 3.3.3'
