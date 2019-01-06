@@ -142,7 +142,8 @@ h6, .h6 {
  */
 
 .blog-post {
-  margin-bottom: 4rem;
+  margin: auto;
+  width: 30%;
 }
 .blog-post-title {
   margin-bottom: .25rem;
@@ -213,4 +214,13 @@ h6, .h6 {
 
 .blog-sidebar-source {
   margin-top: 20px;
+}
+
+.blog-group {
+  margin: 10px;
+}
+
+.blog-show {
+  margin: auto;
+  width: 70%;
 }
