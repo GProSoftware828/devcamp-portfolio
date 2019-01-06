@@ -56,3 +56,5 @@ gem 'cocoon', '~> 1.2', '>= 1.2.9'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+
+ruby "2.4.0"
