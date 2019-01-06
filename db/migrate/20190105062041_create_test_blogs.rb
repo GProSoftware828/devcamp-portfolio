@@ -1,4 +1,4 @@
-class CreateTestBlogs < ActiveRecord::Migration[5.0]
+class CreateTestBlogs < ActiveRecord::Migration[4.2]
   def change
     create_table :test_blogs do |t|
       t.string :title
