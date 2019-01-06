@@ -20,4 +20,5 @@
 //= require gritter
 //= require popper
 //= require bootstrap-sprockets
+//= require cable
 //= require turbolinks
