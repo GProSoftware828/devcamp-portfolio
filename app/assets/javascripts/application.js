@@ -17,13 +17,10 @@
 //= require html.sortable
 //= require cocoon
 //= require gritter
-<<<<<<< HEAD
 //= require popper
 //= require bootstrap-sprockets
 //= require cable
 //= require turbolinks
-=======
 //= require cable
 //= require turbolinks
 //= require_tree .
->>>>>>> 0b450362c189de2f3ac4ace25fe6f774887f3233
