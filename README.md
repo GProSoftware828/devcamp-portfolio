@@ -54,6 +54,13 @@ The views utilize embedded ruby for the models:
 ```
 ## Configuration
 
-This application is hosted in development locally and in production in Heroku with a Postgres DB.
-
 Ready for use upon download of directory.
+
+Fixes implemented for Heroku production version:
+
+1. added Security Key via terminal after updating 'config/application.rb' line 12
+2. updated 'config/environments/production.rb' line 71
+3. completed merging in git branch overlapping due to herkou push error referring to unknown object >>
+4. fixed Uglifer gem settings 'config/environments/production.rb' line 27
+5. Few others, mostly typos coming up in Heroku logs
+NOTE: Please download latest production version and run in local host- Heroku is not running the Bootstrap collase nav or background video in free dynos mode.
