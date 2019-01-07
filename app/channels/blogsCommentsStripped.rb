@@ -1,2 +1,0 @@
-#blogs_channel.rb:
-
