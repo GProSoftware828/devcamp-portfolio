@@ -1,8 +1,8 @@
-# Ruby on Rails Application for User Profiles
+# George Payne - Portfolio
 
-Made from online class Dissecting Ruby on Rails 5 - Become a Professional Developer instructor Jordan Hudgens, CTO at devCamp.
+This is my digital resume. I built it while studying the online class Dissecting Ruby on Rails 5 - Become a Professional Developer instructor Jordan Hudgens, CTO at devCamp.
 
-This application allows users to sign in and add both blog posts and also a portfolio image with notes. The topics are displaying the different applications and software languages the user wishes to show to other site users as a forum posting.
+This application is a full feature capable Rails app that has several gems and capacity to continue building out features such as further authorization, Action Cable comments, and various styling techniques to name a few. 
 
 ## Introduction
 
@@ -15,6 +15,8 @@ This application uses three controllers, 8 models, a dozen migration files, and 
 * [bootstrap](https://rubygems.org/gems/bootstrap)
 
 * [byebug](https://rubygems.org/gems/byebug)
+
+* [redis](https://rubygems.org/gems/redis)
 
 * others
 
@@ -52,6 +54,13 @@ The views utilize embedded ruby for the models:
 ```
 ## Configuration
 
-This application is hosted in development locally and in production in Heroku with a Postgres DB.
-
 Ready for use upon download of directory.
+
+Fixes implemented for Heroku production version:
+
+1. added Security Key via terminal after updating 'config/application.rb' line 12
+2. updated 'config/environments/production.rb' line 71
+3. completed merging in git branch overlapping due to herkou push error referring to unknown object >>
+4. fixed Uglifer gem settings 'config/environments/production.rb' line 27
+5. Few others, mostly typos coming up in Heroku logs
+NOTE: Please download latest production version and run in local host- Heroku is not running the Bootstrap collase nav or background video in free dynos mode.
