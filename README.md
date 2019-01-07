@@ -1,4 +1,4 @@
-# Ruby on Rails Application for User Profiles
+# George Payne - Portfolio
 
 This is my digital resume. I built it while studying the online class Dissecting Ruby on Rails 5 - Become a Professional Developer instructor Jordan Hudgens, CTO at devCamp.
 
