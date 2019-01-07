@@ -16,6 +16,8 @@ This application uses three controllers, 8 models, a dozen migration files, and 
 
 * [byebug](https://rubygems.org/gems/byebug)
 
+* [redis](https://rubygems.org/gems/redis)
+
 * others
 
 ## Versions
